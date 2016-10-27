@@ -1,0 +1,30 @@
+package hwkProblems;
+import java.util.*;
+
+public class BubbleSortV3 {
+	
+	public static void main(String[] args){
+	
+		Random rn = new Random();
+		int [] rando = new int[20];
+		System.out.println("The random number array before sorting.");
+		for(int i =0; i < 20; i++)
+		{	rando[i] = rn.nextInt(50) + 1;
+		    System.out.println(rando[i]);}
+		int j;
+		boolean swapped = true;
+		int temp;
+		while(swapped)
+		{	swapped = false;
+			for(j=0;j<rando.length-1;j++)
+			{
+				if(rando[j]>rando[j+1])
+				{
+					temp = rando[ j ];               
+                    rando[ j ] = rando[ j+1 ];
+                    rando[ j+1 ] = temp;
+                   swapped = true;  }}}
+		
+		System.out.println("The random number array post sorting.");
+		for(int z=0;z<rando.length-1;z++)
+		{System.out.println(rando[z]);}}}
